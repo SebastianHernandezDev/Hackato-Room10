@@ -38,14 +38,14 @@ footer {
 /* 
   Estilos para los enlaces (<a>) DENTRO de las listas del footer.  
 */
-.listaFooter a {
+.listaFooter .enlaceFooter {
     text-decoration: none;
     color: inherit; /* Hace que el enlace herede el color blanco de su padre (footer) */
     transition: opacity 0.3s ease; /* Añade una transición suave para el efecto hover */
 }
 
 /* Efecto al pasar el ratón sobre los enlaces de la lista para mejorar la usabilidad */
-.listaFooter a:hover, li:hover {
+.listaFooter .enlaceFooter:hover, .liFooter:hover {
     color: var(--Color3);
 }
 
