@@ -7,9 +7,10 @@ body, html {
 
 /* ===== Sección principal con video de fondo (Hero) ===== */
 .hero-con-video {
-  position: relative; /* Necesario para que el video se posicione absolutamente dentro */
-  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
-  overflow: hidden; /* Oculta cualquier parte del video que sobresalga */
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   display: flex; /* Flexbox para centrar contenido */
   align-items: center; /* Centrado vertical */
   justify-content: center; /* Centrado horizontal */
@@ -18,14 +19,13 @@ body, html {
 }
 
 .video-fondo {
-  position: absolute; /* Posiciona el video dentro del contenedor */
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: 0; left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* El video cubre toda el área sin deformarse */
-  z-index: -1; /* El video va detrás del contenido */
-  filter: brightness(0.6); /* Oscurece el video para mejorar legibilidad del texto */
+  object-fit: cover;
+  z-index: -1;
+  filter: none;
 }
 
 /* ===== Contenido textual sobre el video ===== */
@@ -213,6 +213,10 @@ footer .col {
     flex: 1 1 0;
     min-width: 180px;
     padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Centra horizontalmente el contenido */
+    text-align: center;     /* Centra el texto */
 }
 footer .tituloFooter {
     font-family: 'Oswald', sans-serif;
@@ -363,6 +367,44 @@ footer .iconRedSocial {
   margin-top: 0.5rem;
   color: #333;
   text-align: left;
+}
+
+/* --- Catálogo Flyboard profesional y centrado --- */
+.catalogo-flyboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 2rem 1rem;
+  background: #e0f7fa;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #0388a620;
+}
+
+.titulo-catalogo-flyboard {
+  font-family: 'Bebas Neue', 'Oswald', sans-serif;
+  font-size: 2.7rem;
+  color: #0388a6;
+  width: 100%;
+  letter-spacing: 2px;
+  margin-bottom: 0.7rem;
+  text-shadow: 1px 2px 8px #0001;
+}
+
+.descripcion-catalogo-flyboard {
+  font-size: 1.25rem;
+  color: #023059;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px #0388a610;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 600px;
 }
 
 /* Carrito de compras */
