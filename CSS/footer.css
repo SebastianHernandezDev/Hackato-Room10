@@ -1,0 +1,37 @@
+/* Importacion de fuente */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+/* Declaracion de variables */
+:root {
+    --Color1: #023059;
+    --Color2: #03658c;
+    --Color3: #0388a6;
+    --Color4: #d98e04;
+    --Color5: #bf4904;
+    --Font-family: "Oswald", sans-serif;
+}
+
+footer {
+    background-color: var(--Color4);
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.tituloFooter {
+    font-family: var(--Font-family);
+}
+
+.listaFooter, a {
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+.iconRedSocial {
+    width: 25px;
+    height: auto;
+}
