@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Iconos de Bootstrap -->
     <link rel="stylesheet" href="CSS/nav.css"> <!-- Estilos para la barra de navegación -->
     <link rel="stylesheet" href="CSS/carrito.css"> <!-- Estilos para el carrito de compras -->
     <link rel="stylesheet" href="./CSS/contenido.css"> <!-- Estilos para las secciones de productos -->
@@ -60,185 +61,165 @@
             <div id="cart-products-list"></div>
             <hr>
             <p class="total-carrito"><strong>Total: $<span id="cart-total">0</span></strong></p>
-            <button class="boton-carrito">Finalizar compra</button>
+            <!-- Se agrupan los botones para un mejor diseño -->
+            <div class="d-grid gap-2">
+                <button class="boton-carrito">Finalizar compra</button>
+                <button id="btn-vaciar-carrito" class="btn btn-outline-danger">Vaciar Carrito</button>
+            </div>
         </div>
     </div>
     <!-- Fin del Carrito de compras -->
-    <!-- Inicio de la Sección de productos "Surf" -->
+    <!-- Inicio de la Sección de productos "Surf" -->    
     <section id="surf" class="productos">
-        <!-- Carrusel de Bootstrap para mostrar productos de surf -->
         <div id="carruselDeporte1" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <!-- Primer slide (item) del carrusel, marcado como activo para que sea visible al cargar -->
                 <div class="carousel-item active">
                     <div class="container text-center justify-content-center">
-                        <div class="row justify-content-center">
-                            <!-- Cada 'col' contiene una tarjeta de producto. Se muestran 3 por slide. -->
+                        <div class="row align-items-center">
                             <div class="col">
-                                <div class="card-surf">
+                                <!-- Se añade un data-id para identificar el producto de forma única -->
+                                <div class="card-surf" data-id="surf-1">
                                     <div class="card-frontal">
-                                        <img src="./assets/images/imgsurf1.jpg" alt="Tabla de surf plateada">
-                                        <h3>Tabla Silver Surfer</h3>
-                                        <p>Ideal para olas medianas, diseño exclusivo y gran estabilidad.</p>
-                                        <p>Precio: <span>$50,000</span></p>
-                                        <!-- Botón con data-attributes para la info del producto -->
-                                        <button class="add-to-cart-btn" 
-                                                data-id="surf-1" 
-                                                data-name="Tabla Silver Surfer" 
-                                                data-price="50000"
-                                                data-img="./assets/images/imgsurf1.jpg">
-                                            Agregar al carrito
-                                        </button>
-                                    </div>
-                                    <div class="card-trasera">
-                                        <img src="./assets/images/imgsurft.jpg" alt="Detalle de la tabla de surf">
-                                        <p>Materiales de alta calidad para un deslizamiento óptimo.</p>
+                                        <!-- Se actualiza la información del producto para que sea funcional -->
+                                        <img src="./assets/images/imgsurf1.jpg" alt="Tabla de surf">
+                                        <h3 class="titulo">Tabla Silver Surfer</h3>
+                                        <p class="descripcion">Ideal para olas medianas, diseño exclusivo y gran
+                                            estabilidad.
+                                        </p>
+                                        <p>Precio: <span class="precio">$50,000</span></p>
+                                        <button class="btn-agregar">Agregar al carrito</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card-surf">
+                                <!-- Se añade un data-id para identificar el producto de forma única -->
+                                <div class="card-surf" data-id="surf-1">
                                     <div class="card-frontal">
-                                        <img src="./assets/images/imgsurf2.jpg" alt="Tabla de surf clásica">
-                                        <h3>Tabla Clásica Longboard</h3>
-                                        <p>Perfecta para principiantes y para disfrutar de un paseo suave.</p>
-                                        <p>Precio: <span>$45,000</span></p>
-                                        <button class="add-to-cart-btn"
-                                                data-id="surf-2"
-                                                data-name="Tabla Clásica Longboard"
-                                                data-price="45000"
-                                                data-img="./assets/images/imgsurf2.jpg">
-                                            Agregar al carrito
-                                        </button>
-                                    </div>
-                                    <div class="card-trasera">
-                                        <img src="./assets/images/imgsurft.jpg" alt="Tabla de surf de silver surfer">
-                                        <p>Construcción duradera y diseño atemporal.</p>
+                                        <!-- Se actualiza la información del producto para que sea funcional -->
+                                        <img src="./assets/images/imgsurf1.jpg" alt="Tabla de surf">
+                                        <h3 class="titulo">Tabla Silver Surfer</h3>
+                                        <p class="descripcion">Ideal para olas medianas, diseño exclusivo y gran
+                                            estabilidad.
+                                        </p>
+                                        <p>Precio: <span class="precio">$50,000</span></p>
+                                        <button class="btn-agregar">Agregar al carrito</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card-surf">
+                                <!-- Se añade un data-id para identificar el producto de forma única -->
+                                <div class="card-surf" data-id="surf-1">
                                     <div class="card-frontal">
-                                        <img src="./assets/images/imgsurf3.jpg" alt="Tabla de surf pro">
-                                        <h3>Tabla Pro Model</h3>
-                                        <p>Para surfistas avanzados que buscan máximo rendimiento.</p>
-                                        <p>Precio: <span>$75,000</span></p>
-                                        <button class="add-to-cart-btn"
-                                                data-id="surf-3"
-                                                data-name="Tabla Pro Model"
-                                                data-price="75000"
-                                                data-img="./assets/images/imgsurf3.jpg">
-                                            Agregar al carrito
-                                        </button>
-                                    </div>
-                                    <div class="card-trasera">
-                                        <img src="./assets/images/imgsurft.jpg" alt="Detalle de la tabla de surf">
-                                        <p>Ligera, rápida y con una respuesta increíble en el agua.</p>
+                                        <!-- Se actualiza la información del producto para que sea funcional -->
+                                        <img src="./assets/images/imgsurf1.jpg" alt="Tabla de surf">
+                                        <h3 class="titulo">Tabla Silver Surfer</h3>
+                                        <p class="descripcion">Ideal para olas medianas, diseño exclusivo y gran
+                                            estabilidad.
+                                        </p>
+                                        <p>Precio: <span class="precio">$50,000</span></p>
+                                        <button class="btn-agregar">Agregar al carrito</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Segundo slide (item) del carrusel -->
                 <div class="carousel-item">
-                    <div class="container text-center justify-content-center justify-content-center">
+                    <div class="container text-center">
                         <div class="row align-items-center">
                             <div class="col">
-                                <div class="card-surf">
+                                <!-- Se añade un data-id para identificar el producto de forma única -->
+                                <div class="card-surf" data-id="surf-1">
                                     <div class="card-frontal">
-                                        <img src="imgsurf1" alt="producto-1">
-                                        <h3>Tabla de surf de silver surfer</h3>
-                                        <p>tabla hecha a partir del arbol del fruto prohido del eden</p>
-                                        <p>Precio: <span>$Tu alma</span></p>
-                                        <button>Agregaralcarrito</button>
-                                    </div>
-                                    <div class="card-trasera">
-                                        <img src="./assets/images/imgsurft.jpg" alt="Tabla de surf de silver surfer">
-                                        <p>fhbsdfbvhbdfsbh</p>
+                                        <!-- Se actualiza la información del producto para que sea funcional -->
+                                        <img src="./assets/images/imgsurf1.jpg" alt="Tabla de surf">
+                                        <h3 class="titulo">Tabla Silver Surfer</h3>
+                                        <p class="descripcion">Ideal para olas medianas, diseño exclusivo y gran
+                                            estabilidad.
+                                        </p>
+                                        <p>Precio: <span class="precio">$50,000</span></p>
+                                        <button class="btn-agregar">Agregar al carrito</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card-surf">
+                                <!-- Se añade un data-id para identificar el producto de forma única -->
+                                <div class="card-surf" data-id="surf-1">
                                     <div class="card-frontal">
-                                        <img src="imgsurf1" alt="producto-1">
-                                        <h3>Tabla de surf de silver surfer</h3>
-                                        <p>tabla hecha a partir del arbol del fruto prohido del eden</p>
-                                        <p>Precio: <span>$Tu alma</span></p>
-                                        <button>Agregaralcarrito</button>
-                                    </div>
-                                    <div class="card-trasera">
-                                        <img src="./assets/images/imgsurft.jpg" alt="Tabla de surf de silver surfer">
-                                        <p>fhbsdfbvhbdfsbh</p>
+                                        <!-- Se actualiza la información del producto para que sea funcional -->
+                                        <img src="./assets/images/imgsurf1.jpg" alt="Tabla de surf">
+                                        <h3 class="titulo">Tabla Silver Surfer</h3>
+                                        <p class="descripcion">Ideal para olas medianas, diseño exclusivo y gran
+                                            estabilidad.
+                                        </p>
+                                        <p>Precio: <span class="precio">$50,000</span></p>
+                                        <button class="btn-agregar">Agregar al carrito</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card-surf">
+                                <!-- Se añade un data-id para identificar el producto de forma única -->
+                                <div class="card-surf" data-id="surf-1">
                                     <div class="card-frontal">
-                                        <img src="imgsurf1" alt="producto-1">
-                                        <h3>Tabla de surf de silver surfer</h3>
-                                        <p>tabla hecha a partir del arbol del fruto prohido del eden</p>
-                                        <p>Precio: <span>$Tu alma</span></p>
-                                        <button>Agregaralcarrito</button>
-                                    </div>
-                                    <div class="card-trasera">
-                                        <img src="./assets/images/imgsurft.jpg" alt="Tabla de surf de silver surfer">
-                                        <p>fhbsdfbvhbdfsbh</p>
+                                        <!-- Se actualiza la información del producto para que sea funcional -->
+                                        <img src="./assets/images/imgsurf1.jpg" alt="Tabla de surf">
+                                        <h3 class="titulo">Tabla Silver Surfer</h3>
+                                        <p class="descripcion">Ideal para olas medianas, diseño exclusivo y gran
+                                            estabilidad.
+                                        </p>
+                                        <p>Precio: <span class="precio">$50,000</span></p>
+                                        <button class="btn-agregar">Agregar al carrito</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Tercer slide (item) del carrusel -->
                 <div class="carousel-item">
-                    <div class="container text-center justify-content-center">
+                    <div class="container text-center">
                         <div class="row align-items-center">
                             <div class="col">
-                                <div class="card-surf">
+                                <!-- Se añade un data-id para identificar el producto de forma única -->
+                                <div class="card-surf" data-id="surf-1">
                                     <div class="card-frontal">
-                                        <img src="imgsurf1" alt="producto-1">
-                                        <h3>Tabla de surf de silver surfer</h3>
-                                        <p>tabla hecha a partir del arbol del fruto prohido del eden</p>
-                                        <p>Precio: <span>$Tu alma</span></p>
-                                        <button>Agregaralcarrito</button>
-                                    </div>
-                                    <div class="card-trasera">
-                                        <img src="./assets/images/imgsurft.jpg" alt="Tabla de surf de silver surfer">
-                                        <p>fhbsdfbvhbdfsbh</p>
+                                        <!-- Se actualiza la información del producto para que sea funcional -->
+                                        <img src="./assets/images/imgsurf1.jpg" alt="Tabla de surf">
+                                        <h3 class="titulo">Tabla Silver Surfer</h3>
+                                        <p class="descripcion">Ideal para olas medianas, diseño exclusivo y gran
+                                            estabilidad.
+                                        </p>
+                                        <p>Precio: <span class="precio">$50,000</span></p>
+                                        <button class="btn-agregar">Agregar al carrito</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card-surf">
+                                <!-- Se añade un data-id para identificar el producto de forma única -->
+                                <div class="card-surf" data-id="surf-1">
                                     <div class="card-frontal">
-                                        <img src="imgsurf1" alt="producto-1">
-                                        <h3>Tabla de surf de silver surfer</h3>
-                                        <p>tabla hecha a partir del arbol del fruto prohido del eden</p>
-                                        <p>Precio: <span>$Tu alma</span></p>
-                                        <button>Agregaralcarrito</button>
-                                    </div>
-                                    <div class="card-trasera">
-                                        <img src="./assets/images/imgsurft.jpg" alt="Tabla de surf de silver surfer">
-                                        <p>fhbsdfbvhbdfsbh</p>
+                                        <!-- Se actualiza la información del producto para que sea funcional -->
+                                        <img src="./assets/images/imgsurf1.jpg" alt="Tabla de surf">
+                                        <h3 class="titulo">Tabla Silver Surfer</h3>
+                                        <p class="descripcion">Ideal para olas medianas, diseño exclusivo y gran
+                                            estabilidad.
+                                        </p>
+                                        <p>Precio: <span class="precio">$50,000</span></p>
+                                        <button class="btn-agregar">Agregar al carrito</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card-surf">
+                                <!-- Se añade un data-id para identificar el producto de forma única -->
+                                <div class="card-surf" data-id="surf-1">
                                     <div class="card-frontal">
-                                        <img src="imgsurf1" alt="producto-1">
-                                        <h3>Tabla de surf de silver surfer</h3>
-                                        <p>tabla hecha a partir del arbol del fruto prohido del eden</p>
-                                        <p>Precio: <span>$Tu alma</span></p>
-                                        <button>Agregaralcarrito</button>
-                                    </div>
-                                    <div class="card-trasera">
-                                        <img src="./assets/images/imgsurft.jpg" alt="Tabla de surf de silver surfer">
-                                        <p>fhbsdfbvhbdfsbh</p>
+                                        <!-- Se actualiza la información del producto para que sea funcional -->
+                                        <img src="./assets/images/imgsurf1.jpg" alt="Tabla de surf">
+                                        <h3 class="titulo">Tabla Silver Surfer</h3>
+                                        <p class="descripcion">Ideal para olas medianas, diseño exclusivo y gran
+                                            estabilidad.
+                                        </p>
+                                        <p>Precio: <span class="precio">$50,000</span></p>
+                                        <button class="btn-agregar">Agregar al carrito</button>
                                     </div>
                                 </div>
                             </div>
@@ -246,22 +227,19 @@
                     </div>
                 </div>
             </div>
-            <!-- Controles para navegar entre los slides (anterior y siguiente) -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carruselDeporte1" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon"></span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carruselDeporte1" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon"></span>
             </button>
         </div>
     </section>
-    <!-- Fin de la Sección de productos "Surf" -->        
+    <!-- Fin de la Sección de productos "Surf" -->
     <!-- Bundle de Bootstrap: Incluye Popper.js para dropdowns, tooltips, y popovers -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Scripts de JavaScript -->
-    <script src="./JS/carrito.js"></script> <!-- Script personalizado para la lógica del carrito -->    
+    <script src="./JS/guardarAgregar.js"></script> <!-- Script para agregar productos y mostrar el carrito -->
 </body>
 
 </html>
