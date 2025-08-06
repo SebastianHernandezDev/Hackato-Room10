@@ -4,19 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HACKATON</title>
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Oswald:wght@700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/styles.css">
-
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="CSS/styles.css">
 
 </head>
 
 <body>
+      <!-- Navbar -->
     <nav>
-        <div class="navbar-container">
+        <div class="container">
             <div class="logo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor"
                     class="bi bi-tsunami logo-icon" viewBox="0 0 16 16">
@@ -32,21 +35,35 @@
                 <li><a href="#flyboard">Flyboard</a></li>
             </ul>
             <div>
-                <button class="boton" aria-label="Carrito de compras">
+                <!-- Boton carrito de compras -->
+                <button class="boton" type="button" data-bs-toggle="offcanvas" data-bs-target="#carritoOffcanvas"
+                    aria-controls="carritoOffcanvas">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                         class="bi bi-cart3" viewBox="0 0 16 16">
                         <path
                             d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
                     </svg>
-                    <span class="contador-carrito" id="contador">0</span>
                 </button>
             </div>
         </div>
     </nav>
+    <!-- Carrito de compras oculto -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoOffcanvas">
+        <div class="offcanvas-header">
+            <h5 id="carritoOffcanvasLabel" class="titulo-carrito">Tu carrito</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="cart-products-list"></div>
+            <hr>
+            <p class="total-carrito"><strong>Total: $<span id="cart-total">0</span></strong></p>
+            <button class="boton-carrito">Finalizar compra</button>
+        </div>
+    </div>
     <section class="hero-con-video">
-    <video class="video-fondo" autoplay muted loop playsinline>
+    <video class="video-fondo" autoplay muted loop playsinline> 
           <source src="./assets/Img/Vídeo sin título ‐ Hecho con Clipchamp (3).mp4" type="video/mp4">
-    </video> 
+         </video>
         <div class="contenido">
             <div class="contenido-izquierda">
                 <h1>Bienvenido a <span id="logo1">Gravitiq</span></h1>
@@ -488,6 +505,8 @@
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
     <script src="./JS/contenido.js"></script>
+    <br>
+    <br>
     <footer>
         <div class="container-fluid"> <!-- container-fluid ocupa todo el ancho de la pantalla -->
             <div class="container text-center">
