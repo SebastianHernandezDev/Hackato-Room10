@@ -1,37 +1,58 @@
-/* Importacion de fuente */
+/* Importacion de fuente 'Oswald' desde Google Fonts para los títulos. */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 
-/* Declaracion de variables */
+/* 
+  Declaración de variables (Custom Properties) para la paleta de colores y la fuente principal.  
+*/
 :root {
-    --Color1: #023059;
-    --Color2: #03658c;
-    --Color3: #0388a6;
-    --Color4: #d98e04;
-    --Color5: #bf4904;
-    --Font-family: "Oswald", sans-serif;
+    --Color1: #023059; /* Azul oscuro principal */
+    --Color2: #03658c; /* Azul medio */
+    --Color3: #0388a6; /* Azul claro/turquesa */
+    --Color4: #d98e04; /* Naranja/dorado para acentos */
+    --Color5: #bf4904; /* Naranja oscuro/quemado */
+    --Font-family: "Oswald", sans-serif; /* Fuente principal para títulos */
 }
 
+/* Estilos generales para el contenedor del pie de página (<footer>) */
 footer {
-    background-color: var(--Color4);
-    color: white;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    background-color: var(--Color4); /* Usa el color de acento como fondo */
+    color: white; /* Color de texto blanco para un buen contraste */
+    padding-top: 1rem; /* Espaciado interno superior */
+    padding-bottom: 1rem; /* Espaciado interno inferior */
 }
 
+/* Estilo para los títulos (h6) dentro del footer */
 .tituloFooter {
-    font-family: var(--Font-family);
+    font-family: var(--Font-family); /* Aplica la fuente personalizada 'Oswald' */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas para un look más formal */
 }
 
-.listaFooter, a {
-    list-style: none;
-    padding-inline-start: 0;
-    margin: 0;
+/* Estilos para las listas (<ul>) dentro del footer */
+.listaFooter {
+    list-style: none; /* Quita los puntos (viñetas) de la lista */
+    padding-inline-start: 0; /* Elimina la sangría (padding) por defecto de la lista */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+/* 
+  Estilos para los enlaces (<a>) DENTRO de las listas del footer.  
+*/
+.listaFooter a {
     text-decoration: none;
-    color: inherit;
+    color: inherit; /* Hace que el enlace herede el color blanco de su padre (footer) */
+    transition: opacity 0.3s ease; /* Añade una transición suave para el efecto hover */
 }
 
+/* Efecto al pasar el ratón sobre los enlaces de la lista para mejorar la usabilidad */
+.listaFooter a:hover, li:hover {
+    color: var(--Color3);
+}
+
+/* Estilos para los iconos de redes sociales */
 .iconRedSocial {
-    width: 25px;
-    height: auto;
+    width: 25px; /* Ancho fijo para los iconos */
+    height: auto; /* Altura automática para mantener la proporción */
+    transition: transform 0.2s ease-in-out; /* Transición suave para el efecto hover */
+    vertical-align: middle; /* Alinea los iconos con el texto si estuvieran juntos */
 }
