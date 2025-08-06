@@ -1,0 +1,86 @@
+/* Centrar el icono y el texto del logo */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.logo-icon {
+    display: block;
+    margin: 0 auto;
+}
+/* Paleta de colores:
+   Azul oscuro: #023059
+   Azul medio: #03658C
+   Azul claro: #0388A6
+   Amarillo: #D98E04
+   Naranja: #BF4904
+*/
+body{
+    font-family: 'Oswald', sans-serif;
+}
+/* navbar */
+nav {
+    background: #ffff;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 8px rgba(2,48,89,0.08);
+    position: sticky;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo a {
+    color: #D98E04;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: color 0.3s;
+}
+.logo a:hover {
+    color: #0388A6;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: #023059;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+.nav-links li a:hover{
+    color: #D98E04;
+}
+
+.boton {
+    background: #D98E04;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    box-shadow: 0 2px 6px rgba(3,101,140,0.08);
+}
+.boton:hover, .boton:focus {
+    background: #0388A6;
+    color: #fff;
+}
