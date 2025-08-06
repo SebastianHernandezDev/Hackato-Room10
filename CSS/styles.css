@@ -408,6 +408,43 @@ footer .iconRedSocial {
   max-width: 600px;
 }
 
+/* --- Catálogo Surf profesional y centrado y full width --- */
+.catalogo-surf-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 2.5rem 2vw 2rem 2vw;
+  background: #e0f7fa;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #0388a620;
+}
+
+.titulo-catalogo-surf {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  color: #0c2d57;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.descripcion-catalogo-surf {
+  font-size: 1.25rem;
+  color: #023059;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px #0388a610;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
 /* Carrito de compras */
 #carritoOffcanvas {
   background: #f8f9fa;
