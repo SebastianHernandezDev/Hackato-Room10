@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos básicos del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Enlaces a fuentes y hojas de estilo (CSS) -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="CSS/nav.css"> <!-- Estilos para la barra de navegación -->
+    <link rel="stylesheet" href="CSS/carrito.css"> <!-- Estilos para el carrito de compras -->
+    <link rel="stylesheet" href="./CSS/contenido.css"> <!-- Estilos para las secciones de productos -->
+    <link rel="stylesheet" href="./CSS/footer.css"> <!-- Estilos para el pie de página -->
+</head>
+
+<body>
+    <!-- Inicio de la Barra de Navegación (Navbar) -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor"
+                    class="bi bi-tsunami logo-icon" viewBox="0 0 16 16">
+                    <path
+                        d="M.036 12.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65m0 2a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65M2.662 8.08c-.456 1.063-.994 2.098-1.842 2.804a.5.5 0 0 1-.64-.768c.652-.544 1.114-1.384 1.564-2.43.14-.328.281-.68.427-1.044.302-.754.624-1.559 1.01-2.308C3.763 3.2 4.528 2.105 5.7 1.299 6.877.49 8.418 0 10.5 0c1.463 0 2.511.4 3.179 1.058.67.66.893 1.518.819 2.302-.074.771-.441 1.516-1.02 1.965a1.88 1.88 0 0 1-1.904.27c-.65.642-.907 1.679-.71 2.614C11.076 9.215 11.784 10 13 10h2.5a.5.5 0 0 1 0 1H13c-1.784 0-2.826-1.215-3.114-2.585-.232-1.1.005-2.373.758-3.284L10.5 5.06l-.777.388a.5.5 0 0 1-.447 0l-1-.5a.5.5 0 0 1 .447-.894l.777.388.776-.388a.5.5 0 0 1 .447 0l1 .5.034.018c.44.264.81.195 1.108-.036.328-.255.586-.729.637-1.27.05-.529-.1-1.076-.525-1.495s-1.19-.77-2.477-.77c-1.918 0-3.252.448-4.232 1.123C5.283 2.8 4.61 3.738 4.07 4.79c-.365.71-.655 1.433-.945 2.16-.15.376-.301.753-.463 1.13" />
+                </svg>
+                <a href="index.html">Gravitiq</a>
+            </div>
+            <!-- Enlaces de navegación principales -->
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#surf">Surf</a></li>
+                <li><a href="#buceo">Buceo</a></li>
+                <li><a href="#flyboard">Flyboard</a></li>
+            </ul>
+            <div>
+                <!-- Botón para abrir el carrito de compras (offcanvas) -->
+                <button class="boton" type="button" data-bs-toggle="offcanvas" data-bs-target="#carritoOffcanvas"
+                    aria-controls="carritoOffcanvas">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin de la Barra de Navegación -->
+    <!-- Inicio del Carrito de compras (Offcanvas de Bootstrap) -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoOffcanvas">
+        <div class="offcanvas-header">
+            <h5 id="carritoOffcanvasLabel" class="titulo-carrito">Tu carrito</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="cart-products-list"></div>
+            <hr>
+            <p class="total-carrito"><strong>Total: $<span id="cart-total">0</span></strong></p>
+            <button class="boton-carrito">Finalizar compra</button>
+        </div>
+    </div>
+    <!-- Fin del Carrito de compras -->
+    <!-- Inicio de la Sección de productos "Surf" -->
+    <section id="surf" class="productos">
+        <!-- Carrusel de Bootstrap para mostrar productos de surf -->
+        <div id="carruselDeporte1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Primer slide (item) del carrusel, marcado como activo para que sea visible al cargar -->
+                <div class="carousel-item active">
+                    <div class="container text-center justify-content-center">
+                        <div class="row justify-content-center">
+                            <!-- Cada 'col' contiene una tarjeta de producto. Se muestran 3 por slide. -->
+                            <div class="col">
+                                <div class="card-surf">
+                                    <div class="card-frontal">
+                                        <img src="./assets/images/imgsurf1.jpg" alt="Tabla de surf plateada">
+                                        <h3>Tabla Silver Surfer</h3>
+                                        <p>Ideal para olas medianas, diseño exclusivo y gran estabilidad.</p>
+                                        <p>Precio: <span>$50,000</span></p>
+                                        <!-- Botón con data-attributes para la info del producto -->
+                                        <button class="add-to-cart-btn" 
+                                                data-id="surf-1" 
+                                                data-name="Tabla Silver Surfer" 
+                                                data-price="50000"
+                                                data-img="./assets/images/imgsurf1.jpg">
+                                            Agregar al carrito
+                                        </button>
+                                    </div>
+                                    <div class="card-trasera">
+                                        <img src="./assets/images/imgsurft.jpg" alt="Detalle de la tabla de surf">
+                                        <p>Materiales de alta calidad para un deslizamiento óptimo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card-surf">
+                                    <div class="card-frontal">
+                                        <img src="./assets/images/imgsurf2.jpg" alt="Tabla de surf clásica">
+                                        <h3>Tabla Clásica Longboard</h3>
+                                        <p>Perfecta para principiantes y para disfrutar de un paseo suave.</p>
+                                        <p>Precio: <span>$45,000</span></p>
+                                        <button class="add-to-cart-btn"
+                                                data-id="surf-2"
+                                                data-name="Tabla Clásica Longboard"
+                                                data-price="45000"
+                                                data-img="./assets/images/imgsurf2.jpg">
+                                            Agregar al carrito
+                                        </button>
+                                    </div>
+                                    <div class="card-trasera">
+                                        <img src="./assets/images/imgsurft.jpg" alt="Tabla de surf de silver surfer">
+                                        <p>Construcción duradera y diseño atemporal.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card-surf">
+                                    <div class="card-frontal">
+                                        <img src="./assets/images/imgsurf3.jpg" alt="Tabla de surf pro">
+                                        <h3>Tabla Pro Model</h3>
+                                        <p>Para surfistas avanzados que buscan máximo rendimiento.</p>
+                                        <p>Precio: <span>$75,000</span></p>
+                                        <button class="add-to-cart-btn"
+                                                data-id="surf-3"
+                                                data-name="Tabla Pro Model"
+                                                data-price="75000"
+                                                data-img="./assets/images/imgsurf3.jpg">
+                                            Agregar al carrito
+                                        </button>
+                                    </div>
+                                    <div class="card-trasera">
+                                        <img src="./assets/images/imgsurft.jpg" alt="Detalle de la tabla de surf">
+                                        <p>Ligera, rápida y con una respuesta increíble en el agua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segundo slide (item) del carrusel -->
+                <div class="carousel-item">
+                    <div class="container text-center justify-content-center justify-content-center">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <div class="card-surf">
+                                    <div class="card-frontal">
+                                        <img src="imgsurf1" alt="producto-1">
+                                        <h3>Tabla de surf de silver surfer</h3>
+                                        <p>tabla hecha a partir del arbol del fruto prohido del eden</p>
+                                        <p>Precio: <span>$Tu alma</span></p>
+                                        <button>Agregaralcarrito</button>
+                                    </div>
+                                    <div class="card-trasera">
+                                        <img src="./assets/images/imgsurft.jpg" alt="Tabla de surf de silver surfer">
+                                        <p>fhbsdfbvhbdfsbh</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card-surf">
+                                    <div class="card-frontal">
+                                        <img src="imgsurf1" alt="producto-1">
+                                        <h3>Tabla de surf de silver surfer</h3>
+                                        <p>tabla hecha a partir del arbol del fruto prohido del eden</p>
+                                        <p>Precio: <span>$Tu alma</span></p>
+                                        <button>Agregaralcarrito</button>
+                                    </div>
+                                    <div class="card-trasera">
+                                        <img src="./assets/images/imgsurft.jpg" alt="Tabla de surf de silver surfer">
+                                        <p>fhbsdfbvhbdfsbh</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card-surf">
+                                    <div class="card-frontal">
+                                        <img src="imgsurf1" alt="producto-1">
+                                        <h3>Tabla de surf de silver surfer</h3>
+                                        <p>tabla hecha a partir del arbol del fruto prohido del eden</p>
+                                        <p>Precio: <span>$Tu alma</span></p>
+                                        <button>Agregaralcarrito</button>
+                                    </div>
+                                    <div class="card-trasera">
+                                        <img src="./assets/images/imgsurft.jpg" alt="Tabla de surf de silver surfer">
+                                        <p>fhbsdfbvhbdfsbh</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tercer slide (item) del carrusel -->
+                <div class="carousel-item">
+                    <div class="container text-center justify-content-center">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <div class="card-surf">
+                                    <div class="card-frontal">
+                                        <img src="imgsurf1" alt="producto-1">
+                                        <h3>Tabla de surf de silver surfer</h3>
+                                        <p>tabla hecha a partir del arbol del fruto prohido del eden</p>
+                                        <p>Precio: <span>$Tu alma</span></p>
+                                        <button>Agregaralcarrito</button>
+                                    </div>
+                                    <div class="card-trasera">
+                                        <img src="./assets/images/imgsurft.jpg" alt="Tabla de surf de silver surfer">
+                                        <p>fhbsdfbvhbdfsbh</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card-surf">
+                                    <div class="card-frontal">
+                                        <img src="imgsurf1" alt="producto-1">
+                                        <h3>Tabla de surf de silver surfer</h3>
+                                        <p>tabla hecha a partir del arbol del fruto prohido del eden</p>
+                                        <p>Precio: <span>$Tu alma</span></p>
+                                        <button>Agregaralcarrito</button>
+                                    </div>
+                                    <div class="card-trasera">
+                                        <img src="./assets/images/imgsurft.jpg" alt="Tabla de surf de silver surfer">
+                                        <p>fhbsdfbvhbdfsbh</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card-surf">
+                                    <div class="card-frontal">
+                                        <img src="imgsurf1" alt="producto-1">
+                                        <h3>Tabla de surf de silver surfer</h3>
+                                        <p>tabla hecha a partir del arbol del fruto prohido del eden</p>
+                                        <p>Precio: <span>$Tu alma</span></p>
+                                        <button>Agregaralcarrito</button>
+                                    </div>
+                                    <div class="card-trasera">
+                                        <img src="./assets/images/imgsurft.jpg" alt="Tabla de surf de silver surfer">
+                                        <p>fhbsdfbvhbdfsbh</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controles para navegar entre los slides (anterior y siguiente) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselDeporte1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselDeporte1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Fin de la Sección de productos "Surf" -->        
+    <!-- Bundle de Bootstrap: Incluye Popper.js para dropdowns, tooltips, y popovers -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scripts de JavaScript -->
+    <script src="./JS/carrito.js"></script> <!-- Script personalizado para la lógica del carrito -->    
+</body>
+
+</html>
