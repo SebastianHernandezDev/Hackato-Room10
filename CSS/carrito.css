@@ -1,0 +1,55 @@
+body{
+    font-family: 'Oswald', sans-serif;
+}
+/* Carrito de compras */
+#carritoOffcanvas {
+  background: #f8f9fa;
+  box-shadow: -2px 0 16px rgba(2,48,89,0.18);
+  border-left: 4px solid #D98E04; 
+}
+#carritoOffcanvas .offcanvas-header {
+  background: #023059; 
+  color: #fff;
+  border-bottom: 2px solid #03658C; 
+}
+#carritoOffcanvas .offcanvas-header h5 {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: #D98E04;
+}#carritoOffcanvas .btn-close {
+  filter: invert(1);
+}
+#carritoOffcanvas .offcanvas-body {
+  padding: 1.5rem 1rem;
+}
+#carritoOffcanvas .list-group-item {
+  background: #fff;
+  border: 1px solid #0388A6; 
+  color: #023059; 
+}
+#carritoOffcanvas .badge.bg-primary {
+  background: #BF4904 !important; 
+}
+#carritoOffcanvas #total_compra {
+  color: #03658C; 
+  font-size: 1.1rem;
+  text-align: right;
+}
+#carritoOffcanvas .boton-carrito {
+  background: #D98E04;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+  margin-top: 1rem;
+  float: right;
+  box-shadow: 0 2px 6px rgba(3,101,140,0.08);
+  cursor: pointer;
+}
+#carritoOffcanvas .boton-carrito:hover {
+  background: #BF4904;
+  color: #fff;
+}

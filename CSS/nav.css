@@ -1,15 +1,4 @@
-/* Centrar el icono y el texto del logo */
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-}
 
-.logo-icon {
-    display: block;
-    margin: 0 auto;
-}
 /* Paleta de colores:
    Azul oscuro: #023059
    Azul medio: #03658C
@@ -35,7 +24,6 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .logo a {
     color: #D98E04;
     font-size: 2rem;
@@ -83,4 +71,14 @@ nav {
 .boton:hover, .boton:focus {
     background: #0388A6;
     color: #fff;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.logo-icon {
+    display: block;
+    margin: 0 auto;
 }
