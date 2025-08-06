@@ -1,17 +1,17 @@
-.productos {
-  padding: 40px 0; /* Añade espacio vertical para que la sección no se vea apretada */
+.productos {  
   background-color: #d98e04;
+  width: 1400px;
+  height: 440px;
+  padding: 5px;
 }
+ 
 /* Card principal con efecto flip */
 .card-surf {
   width: 300px;
-  height: 320px;
-  /* Se añaden márgenes automáticos a los lados para centrar la tarjeta 
-     horizontalmente dentro de su columna contenedora (.col). */
-  margin-left: auto;
-  margin-right: auto;
+  height: 410px;
   perspective: 1000px; /* Necesario para el efecto 3D */
 }
+ 
 .card-surf .card-frontal,
 .card-surf .card-trasera {
   width: 100%;
