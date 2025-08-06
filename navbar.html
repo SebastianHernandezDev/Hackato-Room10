@@ -54,22 +54,13 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
         </div>
         <div class="offcanvas-body">
-            <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Tabla de surf
-                    <span class="badge bg-primary rounded-pill">1</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Traje de neopreno
-                    <span class="badge bg-primary rounded-pill">2</span>
-                </li>
-            </ul>
+            <div id="cart-products-list"></div>
             <hr>
-            <p class="total-carrito"><strong>Total: $300.000</strong></p>
+            <p class="total-carrito"><strong>Total: $<span id="cart-total">0</span></strong></p>
             <button class="boton-carrito">Finalizar compra</button>
         </div>
     </div>
-
+<script src="JS/carrito.js"></script>
 
 </body>
 
